@@ -8,6 +8,7 @@ import { UserContext } from "../../../App";
 
 function App() {
   const { UserData, setUserData } = useContext(UserContext);
+  console.log(UserData);
   return (
     <div className="row  justify-content-center" id="Profile">
       <div className="card ">
