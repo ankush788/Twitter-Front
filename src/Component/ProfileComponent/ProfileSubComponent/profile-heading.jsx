@@ -9,7 +9,7 @@ function Profile_heading(props) {
   async function TweetData() {
     try {
       const response = await axios.post(
-        "https://twitter-backend-sooty.vercel.app/data/UserTweet",
+        "https://twitter-backend-flame.vercel.app/data/UserTweet",
         { name: props.name },
         { withCredentials: true }
       );
