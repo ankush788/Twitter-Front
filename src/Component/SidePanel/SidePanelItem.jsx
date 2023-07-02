@@ -21,7 +21,7 @@ export default function SidePanelItem(props) {
       );
 
       if (response.data) {
-        setFollower(response.data.sucess);
+        setFollower(response.data.success);
       }
     } catch (err) {
       console.log(err);
