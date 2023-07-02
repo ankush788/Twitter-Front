@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     async function TweetData() {
       try {
-        const response = await axios.get("/data/AllTweet", {
+        const response = await axios.get("https://twitter-backend-flame.vercel.app/data/AllTweet", {
           withCredentials: true,
         });
 
