@@ -105,7 +105,7 @@ export default function Follower() {
         <div className="nameBar d-flex justify-content-evenly">
           <div
             className="Name"
-            style={Data.toggle === true ? NameStyle : {}}
+            style={Data.toggle === true ? NameStyle : { borderBottom:"0.9px solid rgb(211, 211, 211, 0.3)"}}
             onClick={setToggle}
           >
             {" "}
@@ -113,7 +113,7 @@ export default function Follower() {
           </div>
           <div
             className="Name"
-            style={Data.toggle === true ? {} : NameStyle}
+            style={Data.toggle === true ? {  borderBottom:"0.9px solid rgb(211, 211, 211, 0.3)"} : NameStyle}
             onClick={setToggle}
           >
             Following
