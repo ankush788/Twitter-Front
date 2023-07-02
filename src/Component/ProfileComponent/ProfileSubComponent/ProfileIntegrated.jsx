@@ -5,9 +5,10 @@ import "./ProfileStyles.css";
 import PROFILE_HEADING from "./profile-heading";
 import CARD_BODY from "./Card_body";
 import { UserContext } from "../../../App";
+import axios from "axios";
 
 function App() {
- let [FollowData, setFollowData]  = useState({Follow:0 ,Following:0});
+ const  [FollowData, setFollowData]  = useState({Follow:0 ,Following:0});
   const { UserData, setUserData } = useContext(UserContext);
   useEffect(() => {
     async function fetchData() {
