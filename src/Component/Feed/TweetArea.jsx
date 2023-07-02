@@ -28,7 +28,7 @@ export default function TweetArea(props) {
     } else {
       try {
         const response = await axios.post(
-          "https://twitter-backend-sooty.vercel.app/data/Tweet",
+          "https://twitter-backend-flame.vercel.app/data/Tweet",
           {
             tweet: Tweet,
             name: UserData.name,
