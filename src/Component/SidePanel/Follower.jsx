@@ -34,7 +34,7 @@ export default function Follower() {
           }
         );
 
-        console.log(response.data.follower,response.data.following);
+     
         setData((prev) => ({
             toggle : prev.toggle,
           Follower: response.data.follower,
