@@ -7,8 +7,7 @@ import CARD_BODY from "./Card_body";
 import { UserContext } from "../../../App";
 
 function App() {
-  let Follow =0; 
-  let Following = 0;
+ const [FollowData, setFollowData]  = useState(null);
   const { UserData, setUserData } = useContext(UserContext);
   useEffect(() => {
     async function fetchData() {
@@ -22,9 +21,10 @@ function App() {
         );
 
         console.log(response);
+        setFollowData({
           Follow : response.data.Follow,
           Following: response.data.Following,
-        
+        });
       } catch (err) {
         console.log(err);
       }
@@ -46,8 +46,8 @@ function App() {
         <CARD_BODY
           name={UserData.name}
           photoLink={UserData.photoLink}
-          Follower={Follow}
-          Following={Following}
+          Follower={FollowData.Follow}
+          Following={FollowData.Following}
           joinDate ={UserData.joinDate}
         />
       </div>
