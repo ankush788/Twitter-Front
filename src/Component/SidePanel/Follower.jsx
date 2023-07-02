@@ -34,13 +34,14 @@ export default function Follower() {
           }
         );
 
+        console.log(response.data.follower,response.data.following);
         setData((prev) => ({
           ...prev,
           Follower: response.data.follower,
           Following: response.data.following,
         }));
         setIsLoading(false);
-        console.log(Data);
+       
       } catch (err) {
         console.log(err);
       }
