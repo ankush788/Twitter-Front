@@ -15,7 +15,7 @@ export default function SidePanel(props) {
     async function UserRecommendation() {
       try {
         const response = await axios.post(
-          "https://twitter-backend-sooty.vercel.app/data/Recommendation",
+          "https://twitter-backend-flame.vercel.app/data/Recommendation",
           { name: UserData.name },
           { withCredentials: true }
         );
