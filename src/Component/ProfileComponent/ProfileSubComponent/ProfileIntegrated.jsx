@@ -1,4 +1,4 @@
-import { React, useContext } from "react";
+import { React, useContext, useState  } from "react";
 import Background from "../../../images/Background.png"; //
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProfileStyles.css";
@@ -8,7 +8,28 @@ import { UserContext } from "../../../App";
 
 function App() {
   const { UserData, setUserData } = useContext(UserContext);
-  console.log(UserData);
+   const [Follow, setFollow] = useState({ totalFollow: 0, totalFollowing: 0 });
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await axios.post(
+          "https://twitter-backend-flame.vercel.app/follow/FollowData",
+          { UserId: UserData.UserId },
+          {
+            withCredentials: true,
+          }
+        );
+        setFollow({
+          totalFollow: response.data.Follow,
+          totalFollowing: response.data.Following,
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    fetchData();
+  }, []);
+
   return (
     <div className="row  justify-content-center" id="Profile">
       <div className="card ">
@@ -23,8 +44,8 @@ function App() {
         <CARD_BODY
           name={UserData.name}
           photoLink={UserData.photoLink}
-          Follower={UserData.Follow.length}
-          Following={UserData.Following.length}
+          Follower={Follow.totalFollow}
+          Following={Follow.totalFollowing}
           joinDate ={UserData.joinDate}
         />
       </div>
