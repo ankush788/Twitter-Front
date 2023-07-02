@@ -8,7 +8,7 @@ import { UserContext } from "../../../App";
 
 function App() {
   const { UserData, setUserData } = useContext(UserContext);
-   const [Follow, setFollow] = useState({ totalFollow: 0, totalFollowing: 0 });
+   let [Follow, setFollow] = useState({ totalFollow: 0, totalFollowing: 0 });
   useEffect(() => {
     async function fetchData() {
       try {
