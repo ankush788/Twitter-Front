@@ -14,7 +14,7 @@ function App() {
       try {
         const response = await axios.post(
           "https://twitter-backend-flame.vercel.app/follow/FollowData",
-          { UserId: UserData.UserId },
+          { UserId: UserData.userId },
           {
             withCredentials: true,
           }
