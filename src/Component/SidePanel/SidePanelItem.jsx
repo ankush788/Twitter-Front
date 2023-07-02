@@ -10,11 +10,11 @@ export default function SidePanelItem(props) {
   //-----------------------Follow----------------------------//
   const [Follower, setFollower] = useState(false);
 
-  async function FollowData(UserId, publicId) {
+  async function FollowData() {
     try {
       const response = await axios.post(
         "https://twitter-backend-flame.vercel.app/follow/UserFollower",
-        { UserId, publicId },
+        {  UserId: props.id, publicId: props.UserId },
         { withCredentials: true }
       );
 
@@ -77,7 +77,7 @@ export default function SidePanelItem(props) {
           }
           color={Follower ? "" : "white"}
           onClick={() => {
-            FollowData(props.id, props.UserId);
+            FollowData();
           }}
         />
       </div>
