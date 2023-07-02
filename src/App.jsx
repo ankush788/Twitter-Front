@@ -21,7 +21,7 @@ export default function App() {
   useEffect(() => {
     async function createAuthentication() {
       try {
-        const response = await axios.get("/route/Authentication", {
+        const response = await axios.get("https://twitter-backend-flame.vercel.app/route/Authentication", {
           withCredentials: true,
         });
 
