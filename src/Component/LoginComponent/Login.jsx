@@ -43,7 +43,7 @@ export default function Login() {
   async function LoginDataTransfer() {
     try {
       const response = await axios.post(
-        "https://twitter-backend-sooty.vercel.app/route/login",
+        "https://https://twitter-backend-flame.vercel.app/route/login",
         LoginData,
         {
           withCredentials: true,
@@ -121,7 +121,7 @@ export default function Login() {
 
       <div className="NotAccount d-flex">
         <p>Don't have an account? </p>
-        <a href="https://twitter-frontend-lyart.vercel.app/Register">Sign up</a>
+        <a href="https://twitter-front-mauve.vercel.app/Register">Sign up</a>
       </div>
     </div>
   );
