@@ -43,7 +43,7 @@ export default function Login() {
   async function LoginDataTransfer() {
     try {
       const response = await axios.post(
-        "https://https://twitter-backend-flame.vercel.app/route/login",
+        "https://twitter-backend-flame.vercel.app/route/login",
         LoginData,
         {
           withCredentials: true,
