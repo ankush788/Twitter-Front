@@ -7,7 +7,7 @@ import CARD_BODY from "./Card_body";
 import { UserContext } from "../../../App";
 
 function App() {
- const [FollowData, setFollowData]  = useState(null);
+ const [FollowData, setFollowData]  = useState({Follow ,Following});
   const { UserData, setUserData } = useContext(UserContext);
   useEffect(() => {
     async function fetchData() {
