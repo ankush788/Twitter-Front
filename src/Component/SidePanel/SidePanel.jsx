@@ -46,7 +46,7 @@ export default function SidePanel(props) {
             photoLink={value.photoLink}
             id={value._id}
             key={value._id}
-            UserId={UserData._id}
+            UserId={UserData.userId}
           />
         ))}
       </ul>
