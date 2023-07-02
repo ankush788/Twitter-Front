@@ -33,7 +33,7 @@ export default function Tweet(props) {
   async function CommentData() {
     try {
       const response = await axios.post(
-        "https://twitter-backend-sooty.vercel.app/data/AllComment",
+        "https://twitter-backend-flame.vercel.app/data/AllComment",
         { parentId: tweet_id },
         { withCredentials: true }
       );
@@ -65,7 +65,7 @@ export default function Tweet(props) {
   async function DeleteTweet() {
     try {
       const response = await axios.post(
-        "https://twitter-backend-sooty.vercel.app/data/DeleteTweet",
+        "https://twitter-backend-flame.vercel.app/data/DeleteTweet",
         { tweet_id, username, parentId },
         {
           withCredentials: true,
@@ -87,7 +87,7 @@ export default function Tweet(props) {
   async function fetchData() {
     try {
       const response = await axios.post(
-        "https://twitter-backend-sooty.vercel.app/data/TweetLike",
+        "https://twitter-backend-flame.vercel.app/data/TweetLike",
         { tweet_id, username, parentId },
         {
           withCredentials: true,
@@ -108,7 +108,7 @@ export default function Tweet(props) {
     async function IntialLike() {
       try {
         const response = await axios.post(
-          "https://twitter-backend-sooty.vercel.app/data/FetchLike",
+          "https://twitter-backend-flame.vercel.app/data/FetchLike",
           { tweet_id, username, parentId },
           {
             withCredentials: true,
