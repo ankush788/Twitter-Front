@@ -28,7 +28,7 @@ export default function Follower() {
         await new Promise(resolve => setTimeout(resolve, 2000));
         const response = await axios.post(
           "https://twitter-backend-flame.vercel.app/follow/FollowAndFollowing",
-          { UserId: UserData._id },
+          { UserId: UserData.userId },
           {
             withCredentials: true,
           }
