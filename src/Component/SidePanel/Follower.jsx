@@ -26,7 +26,7 @@ export default function Follower() {
     async function fetchData() {
       try {
         
-        const response = await axios.post(
+        let  response = await axios.post(
           "https://twitter-backend-flame.vercel.app/follow/FollowAndFollowing",
           { UserId: UserData.userId },
           {
@@ -36,7 +36,7 @@ export default function Follower() {
 
         console.log(response.data.follower,response.data.following);
         setData((prev) => ({
-          ...prev,
+            toggle : prev.toggle,
           Follower: response.data.follower,
           Following: response.data.following,
         }));
