@@ -13,7 +13,7 @@ export default function SidePanelItem(props) {
   async function FollowData(UserId, publicId) {
     try {
       const response = await axios.post(
-        "https://twitter-backend-flame.vercel.app/follow/UserFollower",
+        "https://twitter-backend-flame.vercel.app/data/UserFollower",
         { UserId, publicId },
         { withCredentials: true }
       );
