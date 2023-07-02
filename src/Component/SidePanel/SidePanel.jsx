@@ -8,7 +8,7 @@ export default function SidePanel(props) {
   const { UserData, setUserData } = useContext(UserContext);
 
   //--------------------------recommendation ----------------//
-
+   console.log("hi" ,UserData);
   const [Recommend, setRecommend] = useState([]);
 
   useEffect(() => {
