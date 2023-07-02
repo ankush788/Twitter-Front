@@ -1,4 +1,4 @@
-import { React, useContext, useState  } from "react";
+import { React,useEffect, useContext, useState  } from "react";
 import Background from "../../../images/Background.png"; //
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProfileStyles.css";
