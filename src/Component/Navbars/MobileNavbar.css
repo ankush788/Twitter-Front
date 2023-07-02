@@ -2,4 +2,6 @@
   border-top: 0.9px solid rgb(211, 211, 211, 0.3);
   position: -webkit-sticky;
   bottom: 20px;
+   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
