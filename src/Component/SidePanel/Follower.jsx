@@ -40,6 +40,7 @@ export default function Follower() {
           Following: response.data.following,
         }));
         setIsLoading(false);
+        console.log(Data);
       } catch (err) {
         console.log(err);
       }
