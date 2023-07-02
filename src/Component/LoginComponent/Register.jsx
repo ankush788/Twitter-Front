@@ -45,7 +45,7 @@ export default function Register() {
       }
       try {
         const response = await axios.post(
-          "https://twitter-backend-sooty.vercel.app/route/register",
+          "https://twitter-backend-flame.vercel.app/route/register",
           {
             email: RegisterData.email,
             name: RegisterData.name,
