@@ -1,0 +1,63 @@
+#FollowPage .MobileNavbar {
+  display: flex;
+}
+#FollowPage .SideBar {
+  border: none;
+  position: sticky;
+  top: 0;
+}
+
+#FollowPage .SidePanel .py-4 {
+  position: sticky;
+  top: 4.5rem;
+}
+
+#FollowPage .FollowPanel {
+  margin: 0 auto;
+  border-top: none;
+}
+
+#FollowPage .nameBar {
+  padding-top: 6%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+#FollowPage .nameBar .Name {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-weight: 700;
+  color: #3f3737bc;
+  display: flex;
+  padding: 2% 20%;
+  justify-content: center;
+}
+
+#FollowPage .nameBar .Name:hover {
+  background-color: rgb(246, 241, 241);
+}
+@media (max-width: 600px) {
+  #FollowPage .col-3,
+  .col-4 {
+    display: none;
+  }
+
+  #FollowPage .col-5 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #FollowPage .col-4 {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  #FollowPage .MobileNavbar {
+    display: none;
+  }
+}

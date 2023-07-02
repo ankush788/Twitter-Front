@@ -1,0 +1,67 @@
+#HomePage .MobileNavbar {
+  display: flex;
+}
+#HomePage .SideBar {
+  border: none;
+  position: sticky;
+  top: 0;
+}
+
+#HomePage .SidePanel .py-4 {
+  position: sticky;
+  top: 4.5rem;
+}
+
+#HomePage .Heading {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  position: sticky;
+  z-index: 1;
+  margin-top: 0;
+  padding: 1rem 0 1rem 1rem;
+  top: 0;
+  border-bottom: 0.9px solid rgb(211, 211, 211, 0.3);
+}
+
+#HomePage .TweetPanel {
+  margin: 0 auto;
+  border-top: none;
+}
+@media (max-width: 600px) {
+  #HomePage .col-3,
+  .col-4 {
+    display: none;
+  }
+
+  #HomePage .col-5 {
+    width: 93%;
+    display: flexbox;
+    justify-content: center;
+  }
+
+  #HomePage .Heading {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    position: sticky;
+    z-index: 1;
+    margin-top: 0;
+    padding: 2.5rem 0 1rem 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    top: 0;
+    border-bottom: 0.9px solid rgb(211, 211, 211, 0.3);
+  }
+}
+
+@media (max-width: 1200px) {
+  #HomePage .col-4 {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  #HomePage .MobileNavbar {
+    display: none;
+  }
+}

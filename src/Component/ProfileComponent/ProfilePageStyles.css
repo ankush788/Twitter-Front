@@ -1,0 +1,52 @@
+#ProfilePage .col-5 {
+  margin: 0;
+  padding: 0;
+}
+
+#ProfilePage .MobileNavbar {
+  display: flex;
+}
+
+#ProfilePage .SidePanel {
+  padding-left: 2rem;
+}
+
+#ProfilePage .SidePanel .py-4 {
+  position: sticky;
+  top: 4.5rem;
+}
+@media (min-width: 600px) {
+  #ProfilePage .MobileNavbar {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  #ProfilePage .col-4,
+  .col-3 {
+    display: none;
+  }
+  .col-4 {
+    width: 0;
+  }
+  .col-5 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #ProfilePage .col-4,
+  .col-3 {
+    display: none;
+  }
+
+  #ProfilePage .col-5 {
+    margin: auto 2rem;
+    padding: 0;
+    width: 85%;
+    /* display: flex;
+    justify-content: center; */
+  }
+}

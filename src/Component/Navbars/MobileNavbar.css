@@ -1,0 +1,5 @@
+.mobile-navbar {
+  border-top: 0.9px solid rgb(211, 211, 211, 0.3);
+  position: -webkit-sticky;
+  bottom: 20px;
+}

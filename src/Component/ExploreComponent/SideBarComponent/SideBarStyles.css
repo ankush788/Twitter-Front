@@ -1,0 +1,39 @@
+#SideBar {
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 50%;
+  position: sticky;
+  top: 3%;
+}
+#SideBar .Option {
+  font-size: 1.2rem;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  margin-top: 40%;
+}
+
+#SideBar .Attribute {
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+#SideBar .Twitter {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0%;
+  padding: 0;
+  font-size: 2rem;
+}
+
+#SideBar .Tweet {
+  /* margin-left: -20; */
+  width: 85%;
+  margin-top: 18rem;
+  height: 2.5rem;
+  
+  
+}

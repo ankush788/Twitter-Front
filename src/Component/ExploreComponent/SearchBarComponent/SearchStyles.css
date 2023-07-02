@@ -1,0 +1,29 @@
+#Search {
+  background-color: rgb(212, 224, 233);
+  margin: 0 auto;
+  position: sticky;
+  width: 85%;
+}
+
+#Search input {
+  display: flex;
+  border-width: 0;
+  background-color: transparent;
+  outline: none;
+  width: 125%;
+  font-size: 1rem;
+  align-items: center;
+}
+
+#Search button {
+  border: none;
+  background-color: transparent;
+  margin-left: 2%;
+}
+
+#Search:focus-within {
+  border: solid;
+  border-width: 0.02rem;
+  border-color: #4079a8;
+  background-color: transparent;
+}

@@ -1,0 +1,53 @@
+/* card-text */
+#ProfileHeading {
+  width: 100%;
+  padding-left: 2%;
+}
+
+#Profile .card {
+  margin: 0;
+  padding: 0;
+  border-top: none;
+}
+
+.card-body .Edit-profile {
+  position: relative;
+  left: 74%;
+}
+
+.profile-main .image {
+  padding: 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left:2%;
+  border: 4px solid #fff;
+  z-index: 1;
+}
+
+#cardText{
+  position: static;
+  padding-top: 3rem;
+}
+
+#cardText .followData{
+padding:0 0.5rem;
+text-decoration: none;
+color: black;
+padding-bottom: 1.3rem;
+}
+
+#cardText .followData:hover{
+  text-decoration:underline;
+  color: rgba(58, 143, 223, 0.832);
+}
+.card-img-top {
+  height: 15rem;
+}
+
+.rounded-pill {
+  padding: 2% 3%;
+  font-size: 15px;
+}

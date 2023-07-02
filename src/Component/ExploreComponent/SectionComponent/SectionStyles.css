@@ -1,0 +1,25 @@
+#Section {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Section .flex-md-fill {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(86, 85, 85);
+  display: flex;
+  justify-content: center;
+}
+
+#Section .flex-md-fill:hover {
+  background-color: rgb(246, 241, 241);
+}
+
+#Section .flex-md-fill.active {
+  border: solid;
+  border-width: 0 0 2px 0;
+
+  border-color: #51aaf3;
+}

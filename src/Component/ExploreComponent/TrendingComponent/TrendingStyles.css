@@ -1,0 +1,46 @@
+#Trending {
+  padding: 4% 2%;
+}
+#Trending .Heading {
+  color: rgb(83, 100, 113);
+  border: none;
+  font-size: 0.7rem;
+  margin: 0;
+  padding-left: 0.5rem;
+  font-weight: 600;
+  position: relative;
+  max-width: auto;
+}
+
+#Trending .Hastag {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  margin: 0;
+  font-weight: 600;
+  position: relative;
+}
+
+#Trending .Tweets {
+  padding-left: 0.5rem;
+  font-size: 0.7rem;
+  margin: 0;
+  font-weight: 600;
+  color: rgb(83, 100, 113);
+  position: relative;
+}
+
+#Trending .Setting {
+  align-items: center;
+  display: flex;
+  height: 0.7rem;
+  border: none;
+  color: rgb(83, 100, 113);
+  background-color: #ffff;
+  padding-right: 4%;
+  font-size: xx-large;
+}
+
+#Trending .Hastag-div {
+  display: flex;
+  justify-content: space-between;
+}
