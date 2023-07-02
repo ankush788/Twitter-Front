@@ -36,7 +36,7 @@ export default function Login() {
 
   //--------------------------GoogleAuthentication----------------------------//
   async function GoogleAuthentication() {
-    const win = window.open("http://localhost:4000/auth/google", "_self");
+    const win = window.open("https://twitter-backend-flame.vercel.app/auth/google", "_self");
   }
 
   //----------------------------- for transfer login data--------------------//
