@@ -15,7 +15,7 @@ export default function MobileNavbar() {
   async function LogoutUser() {
     try {
       const response = await axios.get(
-        "https://twitter-backend-sooty.vercel.app/route/logout",
+        "https://twitter-backend-flame.vercel.app/route/logout",
         {
           withCredentials: true,
         }
