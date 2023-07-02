@@ -25,7 +25,7 @@ export default function Follower() {
   useEffect(() => {
     async function fetchData() {
       try {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        
         const response = await axios.post(
           "https://twitter-backend-flame.vercel.app/follow/FollowAndFollowing",
           { UserId: UserData.userId },
@@ -128,7 +128,7 @@ export default function Follower() {
               photoLink={value.photoLink}
               id={value._id}
               key={value._id}
-              UserId={UserData._id}
+              UserId={UserData.userId}
             />
           ))}
         </div>
@@ -144,7 +144,7 @@ export default function Follower() {
               photoLink={value.photoLink}
               id={value._id}
               key={value._id}
-              UserId={UserData._id}
+              UserId={UserData.userId}
             />
           ))}
         </div>
