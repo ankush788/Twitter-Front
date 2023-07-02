@@ -26,7 +26,7 @@ export default function Follower() {
     async function fetchData() {
       try {
         const response = await axios.post(
-          "https://twitter-backend-flame.vercel.app/follow/FollowAndFollowing",
+          "https://twitter-backend-flame.vercel.app/data/FollowAndFollowing",
           { UserId: UserData._id },
           {
             withCredentials: true,
