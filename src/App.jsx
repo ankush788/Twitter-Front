@@ -8,6 +8,7 @@ import { useState, createContext, useEffect } from "react";
 import Follower from "./Component/SidePanel/Follower";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Loading  from "./Loading";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js"; // import to use javascript of bootstrap
 
 //-----------------export user state ----------------//
@@ -46,15 +47,15 @@ export default function App() {
             <Route path="/Register" element={<Register />} />
             <Route
               path="/Profile"
-              element={UserData ? <Profile /> : <Login />}
+              element={UserData ? <Profile /> : <Loading />}
             />
             <Route
               path="/Explore"
-              element={UserData ? <Explore /> : <Login />}
+              element={UserData ? <Explore /> : <Loading/>}
             />
             <Route
               path="/Follow"
-              element={UserData ? <Follower /> : <Login />}
+              element={UserData ? <Follower /> : <Loading/>}
             />
           </Routes>
         </Router>
