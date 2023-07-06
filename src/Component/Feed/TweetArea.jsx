@@ -41,7 +41,7 @@ export default function TweetArea(props) {
          // alert(response.data.message);
         SetTweet("");
 
-        window.location.reload();
+       
       } catch (err) {
         console.log(err);
         alert(err);
