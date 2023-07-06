@@ -38,7 +38,7 @@ export default function TweetArea(props) {
           },
           { withCredentials: true }
         );
-        alert(response.data.message);
+         // alert(response.data.message);
         SetTweet("");
 
         window.location.reload();
