@@ -1,3 +1,6 @@
+#HomePage{
+  position : relative;
+}
 #HomePage .MobileNavbar {
   display: flex;
 }
